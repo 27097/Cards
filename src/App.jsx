@@ -1,17 +1,15 @@
 import { useState } from 'react'
-import Card from './components/card/Card'
-import Card1 from './components/card1/Card1'
+ import { Card1, Card2, Card3 } from './components'
 import './App.css'
 
 function App() {
- 
-
+  const [count, setCount] = useState(0)
 
   return (
-     <div className='app'>
-      <Card1/>
-     </div>
+    <>
+      <Card2/>
+    </>
   )
-} 
+}
 
 export default App

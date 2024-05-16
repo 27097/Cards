@@ -1,21 +1,24 @@
 import style from './Card1.module.css'
-
-
-const Card1 =()=>{
-    const imagen= 'https://i.pinimg.com/564x/4e/25/80/4e2580d67ef0011b97d62c64749986d0.jpg'
+import image from './image.jpg'
+const Card1  =()=>{
     return(
-      <div className={style.card}>
-        <div className={style.imageBox}>
-             <img src={imagen} alt="imagen" />
-        </div>
-        <div className={style.content}>
-            <h2>pepe argento</h2>
-            <p>descripcion...</p>
-        </div>
-
+        <>
+        <div className={style.body}>
+    <div className={style.card}>
+      <img src={image} />
+      <div>
+        <h2>Kaye Morris</h2>
+        <h3>UX Developer</h3>
+        <p>
+          Empowering users through captivating interfaces, turning ideas into
+          pixel-perfect realities.
+        </p>
+        <button>Follow Account</button>
       </div>
+    </div>
+  </div>
+        </>
     )
-}
-
+};
 
 export default Card1
